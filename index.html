@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <header class="text-center"><h1>Etch-A-Sketch</h1></header>
+    <main class="flex center-both">
+        <div class="controls flex col center-both">
+            <input type="color" value="#6B6B6B">
+            <button class="settings-button flex center-both" id="eraser">Eraser</button>
+            <button class="settings-button flex center-both" id="rainbow">Rainbow</button>
+            <button class="settings-button flex center-both" id="show-grid">Grid</button>
+            <button class="settings-button flex center-both" id="random">Random</button>
+            <button class="settings-button flex center-both" id="clear">Clear</button>
+
+            <label for="grid">32x32</label>
+            <input id="grid" type="range" min=1 max=100 value=32>
+        </div>
+        <div class="grid flex wrap"></div>
+    </main>
+    <footer class="text-center">Copyright &copy; Project by Zohaib Ali, 2023</footer>
+</body>
+</html>
